@@ -3,45 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BMI Calculator - Health & Fitness Tracker</title>
+  <title>Contact Us | Health & Fitness Tracker</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-  <div class="container">
-    <h1>Health & Fitness Tracker</h1>
+  <header>
     <nav>
+      <h1>Health & Fitness Tracker</h1>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="workouts.html">Workouts</a></li>
         <li><a href="diet.html">Diet Tips</a></li>
         <li><a href="bmi.html">BMI Calculator</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
-  </div>
-</header>
+  </header>
 
-<section id="bmi-preview">
-  <h2>BMI Calculator</h2>
-  <form id="bmiForm">
-    <label for="weight">Weight (kg):</label>
-    <input type="number" id="weight" required>
+  <section class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! Whether you have questions, suggestions, or feedback, use the form below to reach out to us.</p>
 
-    <label for="height">Height (cm):</label>
-    <input type="number" id="height" required>
+      <form action="https://formsubmit.co/oladejitestimony4@gmail.com" method="POST">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
+  
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="thankyou.html">
+  
+  <button type="submit">Send Message</button>
+</form>
+      
+    </div>
+  </section>
 
-    <button type="button" onclick="calculateBMI()">Calculate BMI</button>
-  </form>
-  <p id="bmiResult"></p>
-</section>
-
-<script src="bmi.js"></script>
-
-<footer>
-  <p>&copy; 2025 Health & Fitness Tracker | Designed by Your Group</p>
-</footer>
-
+  <footer>
+    <p>&copy; 2025 Health & Fitness Tracker. All rights reserved.</p>
+  </footer>
 </body>
 </html>
